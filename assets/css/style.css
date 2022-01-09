@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  margin: 30px;
+}
+
+td {
+  padding: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+p {
+  padding: 10px;
+}
+
+tbody > tr:first-child p:nth-child(2n) {
+  font-size: 40px;
+}
+
+tbody tr td:first-child p {
+  text-align: left;
+}
+
+button {
+  padding: 5px 20px;
+  color: #162955;
+  background-color: #dbdbdb;
+  border-radius: 5px;
+  border: 1.5px solid #cacaca;
+}
+
+tbody > tr:first-child > td {
+  color: white;
+  font-weight: bold;
+}
+
+/* Нечетные строки */
+tbody > tr:nth-child(even) > td:nth-child(1n) {
+  background-color: #dbdbdb;
+}
+
+tbody > tr:nth-child(even) > td:nth-child(2n) {
+  background-color: #e7e7e7;
+}
+/* -------------- */
+
+/* Четные строки */
+
+tbody > tr:nth-child(odd) > td:nth-child(1n) {
+  background-color: #ececec;
+}
+
+tbody > tr:nth-child(odd) > td:nth-child(2n) {
+  background-color: #f3f3f3;
+}
+/* ----------------- */
+
+/* Первая строка */
+tbody > tr:first-child > td:nth-child(1) {
+  background-color: #7887ab;
+}
+
+tbody > tr:first-child > td:nth-child(2) {
+  background-color: #4f628e;
+}
+
+
+tbody > tr:first-child > td:nth-child(3) {
+  background-color: #2e4172;
+}
+
+tbody > tr:first-child > td:nth-child(4) {
+  background-color: #162955;
+}
+
+tbody > tr:first-child > td:nth-child(5) {
+  background-color: #061539;
+}
+
+/* Последня Строка */
+tfoot > tr:first-child > td:nth-child(odd) {
+  background-color: #dbdbdb;
+}
+
+tfoot > tr:first-child > td:nth-child(even) {
+  background-color: #e7e7e7;
+}
+
+/* Скругления таблицы */
+tbody tr:first-child td:nth-child(1) {
+  border-radius: 10px 0px 0px 0px;
+}
+tbody tr:first-child td:nth-child(5) {
+  border-radius: 0px 10px 0px 0px;
+}
+
+tfoot tr:last-child td:nth-child(1) {
+  border-radius: 0px 0px 0px 10px;
+}
+tfoot tr:last-child td:nth-child(5) {
+  border-radius: 0px 0px 10px 0px;
+}
