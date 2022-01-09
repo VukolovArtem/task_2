@@ -6,6 +6,7 @@
 
 table {
   margin: 30px;
+  font-size: 20px;
 }
 
 td {
@@ -28,11 +29,19 @@ tbody tr td:first-child p {
 
 button {
   padding: 5px 20px;
+  margin: 0px 25px;
   color: #162955;
   background-color: #dbdbdb;
   border-radius: 5px;
   border: 1.5px solid #cacaca;
 }
+
+button:hover{
+  color: #dbdbdb;
+  background-color:#162955;
+}
+
+
 
 tbody > tr:first-child > td {
   color: white;
@@ -105,3 +114,4 @@ tfoot tr:last-child td:nth-child(1) {
 tfoot tr:last-child td:nth-child(5) {
   border-radius: 0px 0px 10px 0px;
 }
+
